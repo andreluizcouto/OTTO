@@ -159,7 +159,7 @@ Note: Emojis are used for data display in category labels (per D-08). Structural
 - Orcamentos (Phase 4)
 - Metas (Phase 5)
 
-**Sidebar header:** App name "FinCoach AI" in semibold 20px with `#2563EB` color, top of sidebar above navigation items.
+**Sidebar header:** App name "FinCoach AI" in semibold 24px (Heading) with `#2563EB` color, top of sidebar above navigation items.
 
 **Sidebar footer:** User email displayed in `#94A3B8` (text-secondary) at 14px, with "Sair" logout link/button below it.
 
