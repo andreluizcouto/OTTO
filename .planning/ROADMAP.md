@@ -1,0 +1,113 @@
+# Roadmap: FinCoach AI
+
+## Overview
+
+FinCoach AI progresses from secure foundation through data and AI capabilities to proactive WhatsApp coaching. Phase 1 establishes authentication and database schema with RLS. Phase 2 populates simulated data and delivers the visual dashboard. Phase 3 integrates AI-powered transaction classification via Make.com and OpenAI. Phase 4 adds budget management with WhatsApp alerts, proving the messaging pipeline. Phase 5 layers on AI-generated insights and financial goal coaching via WhatsApp -- the core product differentiator.
+
+## Phases
+
+**Phase Numbering:**
+- Integer phases (1, 2, 3): Planned milestone work
+- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
+
+Decimal phases appear between their surrounding integers in numeric order.
+
+- [ ] **Phase 1: Foundation** - Supabase Auth, database schema with RLS, and Streamlit app skeleton
+- [ ] **Phase 2: Data & Dashboard** - Simulated transactions and interactive spending dashboard
+- [ ] **Phase 3: AI Classification** - Automatic transaction categorization via OpenAI and Make.com
+- [ ] **Phase 4: Budgets & WhatsApp Alerts** - Category budget tracking with WhatsApp overspending alerts
+- [ ] **Phase 5: AI Coach & Goals** - AI-generated insights and proactive goal coaching via WhatsApp
+
+## Phase Details
+
+### Phase 1: Foundation
+**Goal**: Users can securely access their own data in a functional app shell
+**Depends on**: Nothing (first phase)
+**Requirements**: AUTH-01, AUTH-02, AUTH-03, AUTH-04, DATA-01, DATA-03
+**Success Criteria** (what must be TRUE):
+  1. User can create an account with email and password and land on a dashboard page
+  2. User can log in, close the browser, reopen it, and still be logged in
+  3. User can log out from any page in the app
+  4. Two different users each see only their own data (verified with test accounts)
+  5. Database tables for transactions, categories, budgets, and goals exist with correct fields
+**Plans**: TBD
+
+Plans:
+- [ ] 01-01: TBD
+**UI hint**: yes
+
+### Phase 2: Data & Dashboard
+**Goal**: Users can see realistic spending data visualized in an interactive dashboard
+**Depends on**: Phase 1
+**Requirements**: DATA-02, DASH-01, DASH-02, DASH-03, DASH-04
+**Success Criteria** (what must be TRUE):
+  1. User can generate simulated transactions with realistic Brazilian merchant names and amounts
+  2. User can view a spending breakdown by category as a chart (pie or bar)
+  3. User can filter spending view by time period (this week, this month)
+  4. User can see spending trend lines over multiple months
+  5. User can compare current month vs previous month spending side by side
+**Plans**: TBD
+
+Plans:
+- [ ] 02-01: TBD
+**UI hint**: yes
+
+### Phase 3: AI Classification
+**Goal**: Transactions are automatically and reliably classified into spending categories by AI
+**Depends on**: Phase 2
+**Requirements**: AICL-01, AICL-02, AICL-03, AICL-04, AICL-05, AICL-06, INTG-01
+**Success Criteria** (what must be TRUE):
+  1. New transactions are automatically classified into categories via the Make.com-to-OpenAI pipeline
+  2. Cryptic Brazilian merchant names (e.g., RCHLO, Pag*) are correctly mapped and classified
+  3. Each classified transaction shows a confidence indicator (high/medium/low) in the UI
+  4. Low-confidence classifications appear in a review queue where the user can correct them
+  5. User can create, rename, and delete custom spending categories
+**Plans**: TBD
+
+Plans:
+- [ ] 03-01: TBD
+
+### Phase 4: Budgets & WhatsApp Alerts
+**Goal**: Users can set spending limits and receive WhatsApp alerts when approaching or exceeding them
+**Depends on**: Phase 3
+**Requirements**: BUDG-01, BUDG-02, BUDG-03, BUDG-04, INTG-03, INTG-04
+**Success Criteria** (what must be TRUE):
+  1. User can set a monthly spending limit for any category
+  2. Dashboard shows a visual progress bar (green/yellow/red) for each budget category
+  3. User receives a WhatsApp message when spending reaches 80% of a category limit
+  4. User receives a WhatsApp message when spending exceeds a category limit
+  5. System checks Z-API connection health before attempting to send messages
+**Plans**: TBD
+
+Plans:
+- [ ] 04-01: TBD
+**UI hint**: yes
+
+### Phase 5: AI Coach & Goals
+**Goal**: Users receive proactive AI-powered financial coaching and goal reminders via WhatsApp
+**Depends on**: Phase 4
+**Requirements**: COACH-01, COACH-02, COACH-03, COACH-04, COACH-05, INTG-02
+**Success Criteria** (what must be TRUE):
+  1. User receives a monthly AI-generated spending insight summary via WhatsApp in Portuguese (e.g., "Voce gastou 30% mais em delivery este mes")
+  2. User can create a financial goal with name, target amount, and deadline in the app
+  3. User receives WhatsApp reminders about their goals at strategic times (Thursday/Friday evenings)
+  4. Goal reminders are personalized -- they mention the goal name, progress, amount remaining, and deadline
+  5. Monthly insight is also viewable in the app dashboard (not just WhatsApp)
+**Plans**: TBD
+
+Plans:
+- [ ] 05-01: TBD
+**UI hint**: yes
+
+## Progress
+
+**Execution Order:**
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+
+| Phase | Plans Complete | Status | Completed |
+|-------|----------------|--------|-----------|
+| 1. Foundation | 0/0 | Not started | - |
+| 2. Data & Dashboard | 0/0 | Not started | - |
+| 3. AI Classification | 0/0 | Not started | - |
+| 4. Budgets & WhatsApp Alerts | 0/0 | Not started | - |
+| 5. AI Coach & Goals | 0/0 | Not started | - |
