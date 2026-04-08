@@ -45,7 +45,11 @@
       "Bash(taskkill //F //PID 19548 //PID 26728)",
       "Bash(taskkill //F //IM uvicorn.exe)",
       "Bash(taskkill //F //PID 13996)",
-      "Bash(taskkill //F //IM node.exe)"
+      "Bash(taskkill //F //IM node.exe)",
+      "Skill(gsd-do)",
+      "Skill(gsd-debug)",
+      "Skill(gsd-map-codebase)",
+      "Skill(gsd-quick)"
     ]
   }
 }
